@@ -2,7 +2,7 @@ Java Enterprise Graduation Project
 ===============================
 
 ### curl samples (application deployed in application context `MyVote`).
-> For windows use `Git Bash`
+> For windows use `Git Bash `
 
 #### get All Users
 `curl -s http://localhost:8080/rest/admin/users --user d@mail.ru:a_pas1`
