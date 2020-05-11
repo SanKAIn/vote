@@ -34,7 +34,7 @@ public class RestaurantUtil {
     }
 
     public static Restaurant restFromTo(RestaurantTo restaurantTo) {
-        return new Restaurant(null, restaurantTo.getName(), Arrays.asList(restaurantTo.getDishes()), restaurantTo.getVotes());
+        return new Restaurant(null, restaurantTo.getName(), Arrays.asList(restaurantTo.getMenu()), restaurantTo.getVotes());
     }
 
     public static String menuFromList(List<Dish> list) {

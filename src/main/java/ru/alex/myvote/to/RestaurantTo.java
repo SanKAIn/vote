@@ -9,16 +9,16 @@ public class RestaurantTo extends BaseTo {
 
     public String name;
 
-    public Dish[] dishes;
+    public Dish[] menu;
 
     public Integer votes;
 
     public RestaurantTo() {}
 
-    public RestaurantTo(Integer id, String name, List<Dish> dishes, Integer votes) {
+    public RestaurantTo(Integer id, String name, List<Dish> menu, Integer votes) {
         this.id = id;
         this.name = name;
-        this.dishes = dishes.toArray(Dish[]::new);
+        this.menu = menu.toArray(Dish[]::new);
         this.votes = votes;
     }
 
@@ -30,8 +30,8 @@ public class RestaurantTo extends BaseTo {
         return name;
     }
 
-    public Dish[] getDishes() {
-        return dishes;
+    public Dish[] getMenu() {
+        return menu;
     }
 
     public Integer getVotes() {
@@ -43,7 +43,7 @@ public class RestaurantTo extends BaseTo {
         return "RestaurantTo{" +
                 "id=" + id +
                 ", Name=" + name +
-                ", Dishes=" + dishes +
+                ", Dishes=" + menu +
                 ", Votes= " + votes +
                 '}';
     }
